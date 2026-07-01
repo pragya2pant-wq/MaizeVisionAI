@@ -111,10 +111,11 @@ page = st.sidebar.radio(
     ]
 )
 
-st.sidebar.image(
-    r"D:\genai\gui\cnn_maize_disease\assets\maizelogo.png",
-    width=120
-)
+from pathlib import Path
+
+logo = Path("assets") / "maizelogo.png"
+
+st.sidebar.image(logo, width=120)
 
 st.sidebar.markdown(
     "## 🌽 MaizeVision AI"
@@ -162,9 +163,9 @@ if page == "🏠 Home":
     )
 
     st.image(
-        r"D:\genai\gui\cnn_maize_disease\assets\maizefield.jpg",
-        use_container_width=True
-    )
+    "assets/maizefield.jpg",
+    use_container_width=True
+)
 
     st.write("")
 
@@ -1064,7 +1065,7 @@ elif page == "🍃 Disease Library":
 
     with st.expander("🌿 Blight", expanded=True):
 
-        st.image(r"D:\genai\gui\cnn_maize_disease\assets\Corn_Blight (59).jpg")
+        st.image("assets/Corn_Blight (59).jpg")
 
         st.write("""
 **Cause**
@@ -1082,7 +1083,7 @@ elif page == "🍃 Disease Library":
 
     with st.expander("🟠 Common Rust"):
 
-        st.image(r"D:\genai\gui\cnn_maize_disease\assets\Corn_Common_Rust (28).jpg")
+        st.image("assets/Corn_Common_Rust (28).jpg")
 
         st.write("""
 **Cause**
@@ -1099,7 +1100,7 @@ elif page == "🍃 Disease Library":
 
     with st.expander("⬜ Gray Leaf Spot"):
 
-        st.image(r"D:\genai\gui\cnn_maize_disease\assets\Corn_Gray_Spot (22).jpg")
+        st.image("assets/Corn_Gray_Spot (22).jpg")
 
         st.write("""
 **Cause**
@@ -1116,7 +1117,7 @@ elif page == "🍃 Disease Library":
 
     with st.expander("✅ Healthy Leaf"):
 
-        st.image(r"D:\genai\gui\cnn_maize_disease\assets\Corn_Health (9).jpg")
+        st.image("assets/Corn_Health (9).jpg")
 
         st.write("""
 **Characteristics**
