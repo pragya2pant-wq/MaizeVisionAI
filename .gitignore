@@ -13,3 +13,11 @@ models/vgg16_final_v2.keras
 
 # Optional notebook checkpoints
 .ipynb_checkpoints/
+
+dataset/
+dataset_split/
+
+.vscode/
+notebooks/
+
+*.ipynb
