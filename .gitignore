@@ -1,0 +1,15 @@
+# Python
+__pycache__/
+*.pyc
+
+# Virtual environment
+maize_cnn/
+.venv/
+venv/
+
+# Large trained models
+models/vgg16_checkpoint.keras
+models/vgg16_final_v2.keras
+
+# Optional notebook checkpoints
+.ipynb_checkpoints/
